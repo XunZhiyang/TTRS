@@ -1,0 +1,72 @@
+html, body, .el-container {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: 'PingFang SC';
+}
+
+.content-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.el-header {
+  padding: 0;
+}
+
+.colorful-dialog {
+
+  .el-dialog__title {
+    font-size: 24px;
+    color: rgba(68, 163, 252, 1);
+    border-bottom: 3px solid rgb(68, 163, 252);
+    display: block;
+    padding-bottom: 15px;
+  }
+
+  .el-dialog__body {
+    padding: 20px 20px 30px;
+  }
+}
+
+.theme-dark {
+  $dark-background: #545c64;
+  $dark-background-hover: rgb(67, 74, 80);
+  $dark-font-color: #fff;
+  $dark-font-color-active: #ffd04b;
+
+  .el-menu {
+    background: $dark-background;
+    color: $dark-font-color;
+
+    .el-menu--horizontal > .el-menu-item.is-active,
+    .el-menu--horizontal > .el-submenu.is-active .el-submenu__title {
+      color: $dark-font-color-active;
+    }
+  }
+
+  .el-menu--horizontal .el-menu .el-menu-item,
+  .el-menu--horizontal .el-menu .el-submenu__title {
+    background: $dark-background;
+    color: $dark-font-color;
+  }
+
+  .el-menu--horizontal > .el-submenu .el-submenu__title:hover,
+  .el-menu--horizontal .el-menu-item:not(.is-disabled):hover,
+  .el-menu--horizontal .el-menu-item:not(.is-disabled):focus {
+    background: $dark-background-hover;
+    color: $dark-font-color;
+  }
+}
+
+.el-submenu__title i,
+.el-menu-item.is-active,
+.el-menu--horizontal > .el-submenu.is-active .el-submenu__title {
+  color: #fff !important;
+}
+
+.el-menu-item.is-active:hover,
+.el-menu--horizontal > .el-submenu.is-active .el-submenu__title:hover {
+  border-bottom: 2px solid rgb(47, 112, 202);
+}
