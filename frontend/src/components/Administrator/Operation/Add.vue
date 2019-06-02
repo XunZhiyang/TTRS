@@ -11,7 +11,7 @@
               <el-input v-model="origin" placeholder="请输入出发地"></el-input>
             </div>
             <div class="AddInput">
-              <el-input v-model="destination" placeholder="请输入出发地"></el-input>
+              <el-input v-model="destination" placeholder="请输入目的地"></el-input>
             </div>
             <div class="AddInput">
               <el-date-picker

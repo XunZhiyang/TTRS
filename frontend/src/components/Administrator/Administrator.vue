@@ -25,7 +25,7 @@
                 <el-menu-item index="2-4">修改车次</el-menu-item>
               </el-submenu>
               <el-menu-item index="3">删库跑路</el-menu-item>
-              <el-menu-item v-if="showPermissions.permissions === '1'" index="4">修改管理员权限</el-menu-item>
+              <el-menu-item v-if="showPermissions.permissions === '1'" index="4">修改用户权限</el-menu-item>
               <el-submenu index="5">
                 <template slot="title">
                   <span class="iconfont icon-caidan07" style="font-size: 37px"></span>

@@ -1,10 +1,12 @@
 <template>
   <div id="TravellersAre">
     <div class="showPrompt">
-           <pre>
+           <pre><font size="4">
               尊敬的旅客：
+
                   感谢您信任NTG，我们真诚的希望您可以获得最好的服务。
-            </pre>
+            </font>
+           </pre>
     </div>
   </div>
 </template>
