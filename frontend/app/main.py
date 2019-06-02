@@ -80,6 +80,7 @@ def output_action_login(command):
 
 @app.route('/action/login', methods=['POST'])
 def action_login() :
+    print("fhdasfhal")
     items = ("userid", "password")
     command = {}
     for item in items:
