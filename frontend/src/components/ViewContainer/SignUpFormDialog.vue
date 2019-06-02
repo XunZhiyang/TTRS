@@ -129,9 +129,9 @@
       submitForm() {
         this.$refs.form.validate((valid) => {
           if (valid) {
-            const {username, password} = this.signUpFormModel;
-            this.signUp({username, password});
             if (this.ifyyu){
+              const {username, password} = this.signUpFormModel;
+              this.signUp({username, password});
               this.dialogVisible = false;
             } else {
                 this.$message.error('请选择正确的阿勇')
