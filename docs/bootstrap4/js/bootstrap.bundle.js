@@ -2859,7 +2859,7 @@
     });
 
     var isRequired = !!requesting && modifiers.some(function (modifier) {
-      return modifier.name === requestedName && modifier.enabled && modifier.order < requesting.order;
+      return modifier.name === requestedName && modifier.enabled && modifier.Order < requesting.Order;
     });
 
     if (!isRequired) {
@@ -3962,7 +3962,7 @@
       })
       // sort the modifiers by order
       .sort(function (a, b) {
-        return a.order - b.order;
+        return a.Order - b.Order;
       });
 
       // modifiers have the ability to execute arbitrary code when Popper.js get inited

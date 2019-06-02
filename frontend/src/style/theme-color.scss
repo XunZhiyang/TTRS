@@ -1,7 +1,8 @@
 html, body, .el-container {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  //height: 100vh;
+  min-height: calc(100vh - 140px);
   overflow-x: hidden;
   font-family: 'PingFang SC';
 }

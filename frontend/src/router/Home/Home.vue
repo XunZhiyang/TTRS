@@ -65,10 +65,11 @@
 
 		.home-hotels-container {
 			margin-top: 20px;
-			margin-bottom: 20px;
+			/*margin-bottom: 20px;*/
 		}
 
 		.untrustworthy-persons .animate-list-block {
+			margin-top: 20px;
 			margin-bottom: 100px;
 		}
 	}
