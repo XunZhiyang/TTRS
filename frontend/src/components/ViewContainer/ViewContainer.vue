@@ -8,7 +8,9 @@
                text-color="rgb(230, 230, 230)"
       >
         <li class="nav-menu-icon">
+          <router-link to="/">
           <img :src="imgLogo" alt="" >
+          </router-link>
         </li>
         <el-menu-item index="1"><router-link to="/">首页</router-link></el-menu-item>
         <el-submenu index="2">
@@ -40,13 +42,23 @@
 <!--      <SideBar />-->
       <router-view></router-view>
     </el-main>
-
+    <el-footer class="el-footer">
+      <div class="footerWord">
+        @allrights reserved 2019-2020 <br>
+        在线客服（qq）：141951602<br>
+        本网站开发过程中没有任何程序员受到不可磨灭的伤害<br>
+      </div>
+      <div class="footerImg">
+        <img  src="../../assets/qrcode.png">
+      </div>
+    </el-footer>
     <template v-if="!loginUser">
       <LoginFormDialog :visible.sync="loginDialogVisible" @open-sign-up-dialog="signUpDialogVisible = true"/>
       <SignUpFormDialog :visible.sync="signUpDialogVisible"/>
     </template>
    <MainBox/>
     <RobTickets/>
+	  <UserNow/>
   </el-container>
 </template>
 
@@ -55,6 +67,7 @@
   import UserTypes, {namespace as UserNamespace} from '@/store/User/types';
   import imgLogo                                 from '@/assets/logo.png';
 
+  import UserNow  from '../UserInformation/UserNow'
   import LoginFormDialog  from './LoginFormDialog';
   import SignUpFormDialog from './SignUpFormDialog'
   import UserDropdown     from './UserDropdown';
@@ -86,6 +99,9 @@
         'openQuery',
         'robShow'
       ]),
+      ...mapActions('userInformation',[
+        'showUserNow'
+      ]),
       onSelectMenu(index) {
         switch (index) {
           case 'login':
@@ -114,6 +130,10 @@
           case '2-5':
             this.robShow()
             break
+          case 'userInformation':
+            console.log('测试测试')
+            this.showUserNow()
+            break
           default :
             break
         }
@@ -126,7 +146,8 @@
       UserDropdown,
       SideBar,
       MainBox,
-      RobTickets
+      RobTickets,
+      UserNow
     }
   }
 </script>
@@ -180,5 +201,27 @@
 
   .el-main {
     padding: 0;
+  }
+  .el-footer{
+    width: 100%;
+    height: 240px !important;
+    background: #084685;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+    .footerWord{
+      margin-top:40px;
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .footerImg{
+      margin-left: 50px;
+      height: 180px;
+      img{
+        height: 180px;
+      }
+    }
   }
 </style>

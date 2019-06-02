@@ -32,6 +32,12 @@
               >
               </el-date-picker>
             </el-form-item>
+            <el-form-item label="座位等级">
+              <el-radio-group v-model="form.resource">
+                <el-radio label="一等座"></el-radio>
+                <el-radio label="二等座"></el-radio>
+              </el-radio-group>
+            </el-form-item>
           </el-form>
           <div class="FromToBack">
             <div class="changeIcon" @click="changeCity">
@@ -124,7 +130,7 @@
     height: 80px;
     border: 1px solid #969896;
     margin-left: calc(50% + 130px);
-    margin-top: -180px;
+    margin-top: -246px;
     border-left: none;
     .changeIcon{
       width: 20px;

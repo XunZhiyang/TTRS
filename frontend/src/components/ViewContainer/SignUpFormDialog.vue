@@ -21,11 +21,15 @@
       <el-form-item label="确认密码" prop="repassword">
         <el-input type="password" v-model="signUpFormModel.repassword"></el-input>
       </el-form-item>
-
+      <el-form-item label="邮箱" prop="email">
+        <el-input type="password" v-model="signUpFormModel.email"></el-input>
+      </el-form-item>
+      <el-form-item label="电话" prop="phone">
+        <el-input type="password" v-model="signUpFormModel.phone"></el-input>
+      </el-form-item>
     </el-form>
     <div class="nineImage">
-      <div class="choseTitle">
-        <font size="3"> 请选出<span class="showyyu">阿勇</span></font></div>
+      <div class="choseTitle"> 请选出<span class="showYuu">yuu</span></div>
         <div v-for="(item,index) in imageNow"  class="showImage"  >
             <img  :alt="item.key" :src="item.img" @click="choseImage($event,index)">
             <div v-if="active == (''+index)" class="trueNow">
@@ -77,11 +81,12 @@
         images:imgs,
         imageNow:[],
         active: '',
-        ifyyu:'',
+        ifYUU:'',
         signUpFormModel: {
           username  : '',
           password  : '',
-          repassword: ''
+          repassword: '',
+          email:'',
         },
         rules          : {
           username  : [
@@ -94,6 +99,12 @@
           repassword: [
             {required: true, message: '请再次输入密码', trigger: 'blur'},
             {validator: checkRepassword, trigger: 'blur'}
+          ],
+          email:[
+            {required: true, message: '请输入邮箱', trigger: 'blur'},
+          ],
+          phone:[
+            {required: true, message: '请输入电话', trigger: 'blur'},
           ]
         }
       }
@@ -120,21 +131,21 @@
       choseImage(data,index){
         this.active = index
         if( data.target.alt === 'noPlus'){
-          this.ifyyu = false
+          this.ifYUU = false
         }else if(data.target.alt === 'plus'){
-          this.ifyyu = true
+          this.ifYUU = true
         }
 
       },
       submitForm() {
         this.$refs.form.validate((valid) => {
           if (valid) {
-            if (this.ifyyu){
-              const {username, password} = this.signUpFormModel;
-              this.signUp({username, password});
+            const {username, password} = this.signUpFormModel;
+            this.signUp({username, password});
+            if (this.ifYUU){
               this.dialogVisible = false;
             } else {
-                this.$message.error('请选择正确的阿勇')
+                this.$message.error('请选择正确的yuu')
             }
           } else {
             return false;
@@ -220,13 +231,12 @@
     border: 1px solid #969896;
     padding-bottom: 10px;
     .choseTitle{
-      margin-top: 6px;
       width: 100%;
-      text-align: center;
+      text-align: left;
       color:#4D5873;
       font-weight:400;
       line-height: 21px;
-      .showyyu{
+      .showYuu{
         color:#61ABF2;
         font-weight:bold;
       }
@@ -235,7 +245,7 @@
       width: 106px;
       height: 100px;
       border:1px solid #DADADA;
-      margin-top:10px;
+      margin-top:30px;
       border:1px dashed  #D9DDE4;
       .trueNow{
         position: absolute;
