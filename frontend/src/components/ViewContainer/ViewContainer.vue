@@ -29,8 +29,7 @@
         <UserDropdown v-if="loginUser" class="nav-menu-right"/>
         <el-menu-item v-else
                       index="login"
-                      class="nav-menu-right"
-        >
+                      class="nav-menu-right">
           登录
         </el-menu-item>
         <li class="search-box nav-menu-right">

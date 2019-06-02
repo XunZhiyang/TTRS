@@ -30,7 +30,7 @@
 
 <style scoped lang="scss">
 	.booking {
-		background-color: rgba(110, 120, 130, 0.3);
+		background-color: rgba(152, 166, 180, 0.3);
 		/*width: 800px;*/
 		height: 85px;
 		text-align: center;
@@ -43,7 +43,7 @@
 		box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
 
 		&:hover {
-			background-color: rgba(110, 120, 130, 0.6);
+			background-color: rgba(158, 150, 150, 0.6);
 		}
 	}
 

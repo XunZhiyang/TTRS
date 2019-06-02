@@ -21,6 +21,7 @@
       <el-form-item label="确认密码" prop="repassword">
         <el-input type="password" v-model="signUpFormModel.repassword"></el-input>
       </el-form-item>
+
     </el-form>
     <div class="nineImage">
       <div class="choseTitle">
