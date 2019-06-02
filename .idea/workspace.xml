@@ -9,10 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce1b0a39-8a41-40cd-88dc-b4dd10009309" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/components/newTicket/BookingTicket.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/components/newTicket/BookingTicket.vue" afterDir="false" />
-    </list>
+    <list default="true" id="ce1b0a39-8a41-40cd-88dc-b4dd10009309" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,12 +200,12 @@
       <option name="presentableId" value="Default" />
       <updated>1559403339448</updated>
       <workItem from="1559403340570" duration="10152000" />
-      <workItem from="1559438450765" duration="1770000" />
+      <workItem from="1559438450765" duration="3209000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11922000" />
+    <option name="totallyTimeSpent" value="13361000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
