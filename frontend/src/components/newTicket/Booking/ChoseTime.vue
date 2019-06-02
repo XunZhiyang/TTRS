@@ -9,13 +9,13 @@
          <div class="timeTitle">
             选择座位等级和出发时间
          </div>
-          <div class="selectLevel">
-            <div class="promptWord"> 请选择座位等级</div>
-            <div class="choseLevel">
-              <el-radio v-model="level" label="1" border size="medium">一等座</el-radio>
-              <el-radio v-model="level" label="2" border size="medium">二等座</el-radio>
-            </div>
-          </div>
+          <!--<div class="selectLevel">-->
+            <!--<div class="promptWord"> 请选择座位等级</div>-->
+            <!--<div class="choseLevel">-->
+              <!--<el-radio v-model="level" label="1" border size="medium">一等座</el-radio>-->
+              <!--<el-radio v-model="level" label="2" border size="medium">二等座</el-radio>-->
+            <!--</div>-->
+          <!--</div>-->
           <div>
             <el-table
               ref="singleTable"

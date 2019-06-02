@@ -8,6 +8,9 @@
             <div class="queryInput left20">
               <el-input v-model="destination" placeholder="目的地"></el-input>
             </div>
+            <div class="queryCenter left20">
+              <el-checkbox v-model="checked">是否中转</el-checkbox>
+            </div>
             <div class="querySearch">
               <el-button class="searchQuery" @click="search">查询</el-button>
             </div>
@@ -69,7 +72,8 @@
       return{
         timeData:[],
         origin:'',
-        destination:''
+        destination:'',
+        checked:''
       }
     },
     methods:{
@@ -112,7 +116,7 @@
   }
   .queryInput{
     float: left;
-    width: 30%;
+    width: 25%;
   }
   .left20{
     margin-left: 40px;
@@ -124,6 +128,11 @@
       width: 100%;
       background:linear-gradient(to right,#FC9C3B,#FFC95D);
     }
+  }
+  .queryCenter{
+    float: left;
+    width: 10%;
+    font-size: 24px;
   }
   .ticketButton{
     width: 100%;
