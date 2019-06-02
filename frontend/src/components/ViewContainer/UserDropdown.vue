@@ -5,7 +5,7 @@
     </template>
     <el-menu-item index="">尊敬的, {{loginUser.username}}</el-menu-item>
     <el-menu-item index="membership" @click="membershipDialogVisible = true">我的会员</el-menu-item>
-    <el-menu-item index="">我的订单</el-menu-item>
+    <el-menu-item index="userOrder">我的订单</el-menu-item>
     <el-menu-item index="userInformation">个人信息</el-menu-item>
     <el-menu-item  @click="logout">退出</el-menu-item>
     <MemberDialog :visible.sync="membershipDialogVisible"/>

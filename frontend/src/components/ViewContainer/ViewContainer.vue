@@ -289,6 +289,7 @@
     <MainBox/>
     <RobTickets/>
     <UserNow/>
+    <UserOrder/>
   </el-container>
 </template>
 
@@ -298,6 +299,7 @@
   import imgLogo                                 from '@/assets/logo.png';
 
   import UserNow  from '../UserInformation/UserNow'
+  import UserOrder from '../UserInformation/UserOrder'
   import LoginFormDialog  from './LoginFormDialog';
   import SignUpFormDialog from './SignUpFormDialog'
   import UserDropdown     from './UserDropdown';
@@ -330,7 +332,7 @@
         'robShow'
       ]),
       ...mapActions('userInformation',[
-        'showUserNow'
+        'showUserNow','openOrder'
       ]),
       onSelectMenu(index) {
         switch (index) {
@@ -364,6 +366,9 @@
             console.log('测试测试')
             this.showUserNow()
             break
+          case 'userOrder':
+            this.openOrder()
+            break
           default :
             break
         }
@@ -377,7 +382,8 @@
       SideBar,
       MainBox,
       RobTickets,
-      UserNow
+      UserNow,
+      UserOrder
     }
   }
 </script>
