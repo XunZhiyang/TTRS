@@ -23,14 +23,12 @@
           <el-menu-item index="2-5">竞拍</el-menu-item>
           <el-menu-item index="2-4">信息查询</el-menu-item>
         </el-submenu>
-<!--        <el-menu-item index="3">更新日志</el-menu-item>-->
         <el-menu-item index="3"><router-link to="/Notes">更新日志</router-link></el-menu-item>
         <el-menu-item index="4"><router-link to="/TravellersAre">旅客须知</router-link></el-menu-item>
         <UserDropdown v-if="loginUser" class="nav-menu-right"/>
         <el-menu-item v-else
                       index="login"
-                      class="nav-menu-right"
-        >
+                      class="nav-menu-right">
           登录
         </el-menu-item>
         <li class="search-box nav-menu-right">
@@ -39,7 +37,7 @@
       </el-menu>
     </el-header>
     <el-main>
-      <SideBar />
+<!--      <SideBar />-->
       <router-view></router-view>
     </el-main>
 

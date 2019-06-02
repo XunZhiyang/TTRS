@@ -30,6 +30,13 @@
             reason  : '车内酗酒'
           },
           {
+            name    : '戚龙杰',
+            pic     : Icon_Person,
+            idType  : '学生证',
+            idNumber: '518XXXXX0430',
+            reason  : '陪马某酗酒'
+          },
+          {
             name    : '寻之扬',
             pic     : Icon_Person,
             idType  : '学生证',
@@ -37,26 +44,47 @@
             reason  : '车内作诗'
           },
           {
+            name    : '庄永昊',
+            pic     : Icon_Person,
+            idType  : '学生证',
+            idNumber: '518XXXXX0440',
+            reason  : '车内做数学分析'
+          },
+          {
             name    : '陈彤',
             pic     : Icon_Person,
             idType  : '学生证',
             idNumber: '518XXXXX0416',
-            reason  : '车内打球'
+            reason  : '车内聚众搓麻'
+          },
+          {
+            name    : '董海辰',
+            pic     : Icon_Person,
+            idType  : '学生证',
+            idNumber: '518XXXXX0417',
+            reason  : '车内聚众搓麻'
+          },
+          {
+            name    : '李云卿',
+            pic     : Icon_Person,
+            idType  : '学生证',
+            idNumber: '518XXXXX0411',
+            reason  : '车内聚众搓麻'
           },
           {
             name    : '毛昕渝',
             pic     : Icon_Person,
             idType  : '学生证',
             idNumber: '518XXXXX0429',
-            reason  : '车内搓麻'
+            reason  : '车内聚众搓麻'
           },
           {
             name    : '杨尚霏',
             pic     : Icon_Person,
             idType  : '学生证',
             idNumber: '518XXXXX0434',
-            reason  : '面向不善，过于弟弟'
-          }
+            reason  : '面相不善，过于弟弟'
+          },
         ]
       }
     },

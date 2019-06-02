@@ -15,7 +15,7 @@ export default {
   [types.ACTION.SUBSCRIBE_MEMBER]({commit, state}){
     const user = {...state.loginUser};
     user.membership = {
-      expireDate: '2020-01-01'
+      expireDate: '2019-06-04'
     };
     commit(types.MUTATION.STORE_LOGIN_STATE, user);
   }

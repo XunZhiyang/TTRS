@@ -79,7 +79,8 @@
     height: 30%;
     border-right: 1px solid #cad3df;
     background-color: #fff;
-    position: absolute;
+    /*position: absolute;*/
+    position: fixed;
     z-index: 9999;
     top: 35%;
     bottom: 0;

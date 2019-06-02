@@ -47,7 +47,7 @@
           } else {
             this.transitionY -= 120;
           }
-        }, 1000)
+        }, 1500)
       })
     },
     destroyed() {

@@ -41,7 +41,7 @@
             </div>
         </div>
         <div class="seatMain">
-          <div class="ticketTitle">选择车厢</div>
+          <div class="ticketTitle">选择座位</div>
           <div class="seatBody">
               <div class="seatHead">
                 <span><img src="../../../src/assets/ticket/check.png"> </span><label>可选</label>

@@ -47,7 +47,7 @@
 
 <style lang='scss' rel="stylesheet/scss" type="text/scss">
   .animation-background {
-    background: linear-gradient(to bottom right, #76b2cf 0, #a5ffd9);
+    background: linear-gradient(to bottom, #f6ded2 0, #a5ffd9);
     height: 100%;
     width: 100%;
     overflow: hidden;

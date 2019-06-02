@@ -19,9 +19,12 @@
     cursor: pointer;
     overflow: hidden;
     margin: 20px 0 0 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /*display: flex;*/
+    /*justify-content: space-around;*/
+    /*align-items: center;*/
+    column-count: 4;
+    line-height: 100px;
+    padding-left: 30px;
     border-radius: 10px;
     transition: all .5s;
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
