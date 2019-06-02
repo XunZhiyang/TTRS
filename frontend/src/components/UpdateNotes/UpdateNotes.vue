@@ -24,8 +24,8 @@
 			<img :src="url17" />
 			<HR/>
 			<p>19.05.04</p>
-			<img :src="url14" />
 			<img :src="url15" />
+			<img :src="url14" />
 			<HR/>
 			<p>19.05.01</p>
 			<img :src="url1" />

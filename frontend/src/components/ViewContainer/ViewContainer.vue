@@ -8,7 +8,7 @@
                text-color="rgb(230, 230, 230)"
       >
         <li class="nav-menu-icon">
-          <img :src="imgLogo" alt="">
+          <img :src="imgLogo" alt="" >
         </li>
         <el-menu-item index="1"><router-link to="/">首页</router-link></el-menu-item>
         <el-submenu index="2">
