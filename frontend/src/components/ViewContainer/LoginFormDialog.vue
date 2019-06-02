@@ -13,7 +13,7 @@
              ref="form"
              label-width="80px"
     >
-      <el-form-item label="用vfv户名" prop="username">
+      <el-form-item label="用户名" prop="username">
         <el-input v-model="loginFormModel.username"></el-input>
       </el-form-item>
       <el-form-item label="密码" prop="password">
@@ -131,21 +131,37 @@
       },
 
       submitForm() {
-        const xhr = new XMLHttpRequest();
-        xhr.open("POST", 'localhost:5000/action/login', true);
-        alert("frfrfrfrfcc cvvcr");
-        xhr.onload = function() {
-          alert("frfrfrfrfr");
-          // if(xhr.readyState == 4 && xmlHttpRequest.status == 200){
-            const b = xhr.responseText;
-            if(b == "1"){
-              alert("登录成功！");
-            }else{
-              alert("登录失败！");
-            }
-          // }
-        }
-        xhr.send=("userid="+loginFormModel.username+"&password="+loginFormModel.password);
+        // let xhr;
+        // if (window.XMLHttpRequest) {
+        //   xhr = new XMLHttpRequest();
+        // } else {
+        //   xhr = new ActiveXObject;
+        // }
+        // let sendData = '';
+        // sendData = JSON.stringify({"userid":this.loginFormModel.username, "password":this.loginFormModel.password});
+        // xhr.open("GET", 'http://127.0.0.1:5000/action/login', true);
+        // return "1"
+        // xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        // let formData = new FormData();
+        // formData.append('userid', this.loginFormModel.username);
+        // formData.append('password', this.loginFormModel.password);
+  
+        // xhr.send("fdfdfd");
+  
+        // xhr.onload = () => {
+        //   let obj = xhr.responseText;
+        //   alert(obj == "");
+        //   if (typeof obj !== 'object') {
+        //     obj = JSON.parse(obj);
+        //   }
+        //   resolve(obj)
+        //   alert("ggggggggggg")
+        //   alert(obj)
+        //   if (obj == "1") {
+        //     alert("vvfvfvfvffv");
+        //   }
+        // }
+        // xhr.send("userid="+loginFormModel.username+"&password="+loginFormModel.password);
         this.$refs.form.validate((valid) => {
           if (valid) {
             this.login(this.loginFormModel);

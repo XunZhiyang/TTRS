@@ -78,13 +78,15 @@ def output_action_login(command):
         return "0"
 
 
-@app.route('/action/login', methods=['POST'])
+@app.route('/action/login', methods=['POST', 'GET'])
 def action_login() :
-    print("fhdasfhal")
+    # print(request.getParameter())
     items = ("userid", "password")
     command = {}
     for item in items:
+        print(item)
         value = request.form.get(item, "")
+        print(value)
         if value :
             command[item] = value
         else :
