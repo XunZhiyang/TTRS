@@ -1,3 +1,5 @@
+# -*- coding: UTF-8 -*-
+
 from flask import render_template, session, request
 from app import app
 import json
