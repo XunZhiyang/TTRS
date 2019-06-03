@@ -22,10 +22,10 @@
         <el-input type="password" v-model="signUpFormModel.repassword"></el-input>
       </el-form-item>
       <el-form-item label="邮箱" prop="email">
-        <el-input type="password" v-model="signUpFormModel.email"></el-input>
+        <el-input type="email" v-model="signUpFormModel.email"></el-input>
       </el-form-item>
       <el-form-item label="电话" prop="phone">
-        <el-input type="password" v-model="signUpFormModel.phone"></el-input>
+        <el-input v-model="signUpFormModel.phone"></el-input>
       </el-form-item>
     </el-form>
     <div class="nineImage">
@@ -145,7 +145,7 @@
             if (this.ifYUU){
               this.dialogVisible = false;
             } else {
-                this.$message.error('请选择正确的yuu')
+              this.$message.error('请选择正确的阿勇')
             }
           } else {
             return false;
