@@ -19,12 +19,12 @@
       <el-row type="flex" justify="space-between">
         <el-col :span="14">
           <div class="ticket-title">
-            <span>04月05日</span>
-            <span>周五</span>
+            <span>06月04日</span>
+            <span>周二</span>
             <span class="small">出发</span>
           </div>
           <div class="ticket-subtitle">
-            09:01 天津西 - 09:24 廊坊
+            00:00 上海思源门 - 09:24 北京天安门
           </div>
           <div class="ticket-subtitle">
             G8924 二等座
@@ -38,7 +38,7 @@
       </el-row>
 
       <div class="price">
-        ¥ <span>28.5</span> 起拍
+        ¥ <span>{{output}}</span> 当前价格
       </div>
 
       <el-row type="flex" class="upset-price" justify="space-between" :gutter="10">
@@ -46,7 +46,7 @@
           <el-input v-model="input" placeholder="请输入竞拍价"></el-input>
         </el-col>
         <el-col :span="12">
-          <button>竞拍</button>
+          <button @click="isdf">竞拍</button>
         </el-col>
       </el-row>
     </div>
@@ -91,6 +91,7 @@
     data() {
       return {
         time: 0,
+        output:'8.17',
         input: '',
       }
     },
@@ -98,6 +99,9 @@
       ...mapActions('ticket',[
         'closeRobShow'
       ]),
+      isdf(){
+        this.output = input
+      },
       count() {
         let _this = this
         const date = Date.now();

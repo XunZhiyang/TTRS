@@ -50,11 +50,11 @@
       return{
         userForm:{
           id:1,
-          userName:'admin',
-          email:'12223518@163.com',
-          phone:'13888888888',
-          password:'******',
-          repassword:'******'
+          userName:'aaaa',
+          email:'a@a.com',
+          phone:'88888888',
+          password:'***',
+          repassword:'***'
         },
       }
     },

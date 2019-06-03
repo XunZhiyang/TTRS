@@ -38,7 +38,6 @@ const router = new Router({
         {path:'/RobTickets',name:'RobTickets',component:RobTickets},
         {path:'/QueryTicket',name:'QueryTicket',component:QueryTicket},
         {path:'/OperationTicket',name:'OperationTicket',component:OperationTicket},
-        {path: '/*', name: 'Silingsi', component: Silingsi},
       ]
     },
     {
@@ -52,7 +51,8 @@ const router = new Router({
         {path: '/Edit', name: 'Edit', component: Edit},
         {path: '/Release', name: 'Release', component: Release}
       ]
-    }
+    },
+    {path: '/*', name: 'Silingsi', component: Silingsi},
   ]
 })
 

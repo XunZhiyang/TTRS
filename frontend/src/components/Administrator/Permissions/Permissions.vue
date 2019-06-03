@@ -55,8 +55,10 @@
           secondName:'管理权限'
         },
         tableData:[
+          {id:'NTG',name:'管理员',word:'降级为普通人员'},
           {id:'admin',name:'普通人员',word:'升级为管理员'},
-          {id:'admin1',name:'管理员',word:'降级为普通人员'}
+          {id:'yyuyyu',name:'普通人员',word:'升级为管理员'},
+          {id:'aaaa',name:'普通人员',word:'升级为管理员'},
         ]
       }
     },

@@ -22,10 +22,10 @@
         <el-input type="password" v-model="signUpFormModel.repassword"></el-input>
       </el-form-item>
       <el-form-item label="邮箱" prop="email">
-        <el-input type="password" v-model="signUpFormModel.email"></el-input>
+        <el-input v-model="signUpFormModel.email"></el-input>
       </el-form-item>
       <el-form-item label="电话" prop="phone">
-        <el-input type="password" v-model="signUpFormModel.phone"></el-input>
+        <el-input v-model="signUpFormModel.phone"></el-input>
       </el-form-item>
     </el-form>
     <div class="nineImage">

@@ -18,12 +18,12 @@
       <el-row type="flex" justify="space-between">
         <el-col :span="14">
           <div class="ticket-title">
-            <span>04月05日</span>
-            <span>周五</span>
+            <span>06月04日</span>
+            <span>周二</span>
             <span class="small">出发</span>
           </div>
           <div class="ticket-subtitle">
-            09:01 天津西 - 09:24 廊坊
+            00:00 上海虹桥 - 09:24 北京天安门
           </div>
           <div class="ticket-subtitle">
             G8924 二等座
@@ -37,7 +37,7 @@
       </el-row>
 
       <div class="price">
-        ¥ <span>28.5</span> 起拍
+        ¥ <span>8.17</span> 当前价格
       </div>
 
       <el-row type="flex" class="upset-price" justify="space-between" :gutter="10">
