@@ -232,7 +232,7 @@
     padding-bottom: 10px;
     .choseTitle{
       width: 100%;
-      text-align: left;
+      text-align: center;
       color:#4D5873;
       font-weight:400;
       line-height: 21px;
