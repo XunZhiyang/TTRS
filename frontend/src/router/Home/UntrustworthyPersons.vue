@@ -85,6 +85,13 @@
             idNumber: '518XXXXX0434',
             reason  : '面相不善，过于弟弟'
           },
+          {
+            name    : '胡图图',
+            pic     : Icon_Person,
+            idType  : '教师工号',
+            idNumber: '00**91',
+            reason  : '不让课变成水课'
+          },
         ]
       }
     },

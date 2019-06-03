@@ -29,7 +29,7 @@
       </el-form-item>
     </el-form>
     <div class="nineImage">
-      <div class="choseTitle"> 请选出<span class="showYuu">yuu</span></div>
+      <div class="choseTitle"> 请选出<span class="showyyu">阿勇</span></div>
         <div v-for="(item,index) in imageNow"  class="showImage"  >
             <img  :alt="item.key" :src="item.img" @click="choseImage($event,index)">
             <div v-if="active == (''+index)" class="trueNow">
@@ -81,7 +81,7 @@
         images:imgs,
         imageNow:[],
         active: '',
-        ifYUU:'',
+        ifyyu:'',
         signUpFormModel: {
           username  : '',
           password  : '',
@@ -131,9 +131,9 @@
       choseImage(data,index){
         this.active = index
         if( data.target.alt === 'noPlus'){
-          this.ifYUU = false
+          this.ifyyu = false
         }else if(data.target.alt === 'plus'){
-          this.ifYUU = true
+          this.ifyyu = true
         }
 
       },
@@ -142,10 +142,10 @@
           if (valid) {
             const {username, password} = this.signUpFormModel;
             this.signUp({username, password});
-            if (this.ifYUU){
+            if (this.ifyyu){
               this.dialogVisible = false;
             } else {
-                this.$message.error('请选择正确的yuu')
+                this.$message.error('请选择正确的阿勇')
             }
           } else {
             return false;
@@ -236,7 +236,7 @@
       color:#4D5873;
       font-weight:400;
       line-height: 21px;
-      .showYuu{
+      .showyyu{
         color:#61ABF2;
         font-weight:bold;
       }

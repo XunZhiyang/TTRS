@@ -8,6 +8,7 @@ import ViewContainer from '@/components/ViewContainer/ViewContainer';
 import Home from '@/router/Home/Home';
 import TravellersAre from '@/components/TravellersAre/TravellersAre'
 import UpdateNotes from '@/components/UpdateNotes/UpdateNotes'
+import Silingsi from '@/components/Silingsi/Silingsi'
 import Exclusive from '@/components/newTicket/Exclusive'
 import BookingTicket from '@/components/newTicket/BookingTicket'
 import RobTickets from '@/components/RobTickets/RobTickets'
@@ -17,6 +18,8 @@ import Add from '@/components/Administrator/Operation/Add'
 import Delete from '@/components/Administrator/Operation/Delete'
 import Edit from '@/components/Administrator/Operation/Edit'
 import Release from '@/components/Administrator/Operation/Release'
+import QueryTicket from '@/components/newTicket/QueryTicket'
+import OperationTicket from '@/components/newTicket/OperationTicket'
 
 Vue.use(Router)
 
@@ -32,7 +35,10 @@ const router = new Router({
         {path: '/Notes', name: 'UpdateNotes', component: UpdateNotes},
         {path: '/Exclusive', name: 'Exclusive', component: Exclusive},
         {path: '/BookingTicket', name: 'BookingTicket', component: BookingTicket},
-        {path: '/RobTickets', name: 'RobTickets', component: RobTickets}
+        {path:'/RobTickets',name:'RobTickets',component:RobTickets},
+        {path:'/QueryTicket',name:'QueryTicket',component:QueryTicket},
+        {path:'/OperationTicket',name:'OperationTicket',component:OperationTicket},
+        {path: '/*', name: 'Silingsi', component: Silingsi},
       ]
     },
     {

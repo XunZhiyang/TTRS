@@ -3,7 +3,7 @@
         <el-row>
           <div class="queryNow">
             <div class="queryInput">
-              <el-input v-model="origin" placeholder="出发地"></el-input>
+              <el-input v-model="origin" value="上海"></el-input>
             </div>
             <div class="queryInput left20">
               <el-input v-model="destination" placeholder="目的地"></el-input>
@@ -71,8 +71,8 @@
     data(){
       return{
         timeData:[],
-        origin:'',
-        destination:'',
+        origin:'上海',
+        destination:'广州',
         checked:''
       }
     },

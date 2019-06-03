@@ -4,9 +4,9 @@
       <el-tabs v-model="activeName" @tab-click="handleClick" >
         <el-tab-pane label="单程票"   name="1"><NewOneWay/></el-tab-pane>
         <el-tab-pane label="往返票"   name="2"><NewTwoWay/></el-tab-pane>
-        <el-tab-pane label="退票"     name="3"><NewRefund/></el-tab-pane>
-        <el-tab-pane label="改签"     name="4"><NewEndorse/></el-tab-pane>
-        <el-tab-pane label="信息查询" name="5"><NewQuery/></el-tab-pane>
+        <!--<el-tab-pane label="退票"     name="3"><NewRefund/></el-tab-pane>-->
+        <!--<el-tab-pane label="改签"     name="4"><NewEndorse/></el-tab-pane>-->
+        <!--<el-tab-pane label="信息查询" name="5"><NewQuery/></el-tab-pane>-->
       </el-tabs>
       <ChoseTime/>
     </div>
@@ -15,10 +15,10 @@
 <script>
   import NewOneWay from './Booking/OneWay'
   import NewTwoWay from './Booking/TwoWay'
-  import NewRefund from './Booking/Refund'
+  // import NewRefund from './Booking/Refund'
   import BreadCrumbs from '@/components/BreadCrumbs/BreadCrumbs'
-  import NewEndorse from  './Booking/Endorse'
-  import NewQuery   from './Booking/theQuery'
+  // import NewEndorse from  './Booking/Endorse'
+  // import NewQuery   from './Booking/theQuery'
   import ChoseTime from './Booking/ChoseTime'
 
   export default {
@@ -27,9 +27,9 @@
       BreadCrumbs,
       NewOneWay,
       NewTwoWay,
-      NewRefund,
-      NewEndorse,
-      NewQuery,
+      // NewRefund,
+      // NewEndorse,
+      // NewQuery,
       ChoseTime
     },
     data(){

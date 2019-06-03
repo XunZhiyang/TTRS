@@ -1,26 +1,25 @@
 <template>
 
-	<div id="404">
-
+	<div id="Silingsi">
 		<img :src="url1"/>
 	</div>
 </template>
 
 <script>
   export default {
-    name: "404",
+    name: "Silingsi",
     data()
     {
       return {
-        url1: require('../404/1.jpg')
+        url1: require('./1.jpg')
       }
     }
   }
 </script>
 
 <style scoped>
-	#404
+	#Silingsi
 	{
-		width: 100%;
+		width: 100% !important;
 	}
 </style>

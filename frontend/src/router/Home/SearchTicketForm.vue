@@ -33,7 +33,15 @@
     </el-form-item>
 
     <el-form-item>
-      <el-button type="primary" @click="countingDialogVisible = true">查询</el-button>
+<!--        <div class="asdfasdf">-->
+      <el-button type="primary">
+
+        <router-link to="/QueryTicket">
+          查  询
+        </router-link>
+      </el-button>
+<!--        </div>-->
+
     </el-form-item>
 
     <CountingDialog :visible.sync="countingDialogVisible"/>
@@ -92,5 +100,10 @@
 </script>
 
 <style lang='scss' rel="stylesheet/scss" type="text/scss">
-
+.asdfasdf
+{
+  position: center !important;
+  width: 1000px;
+  /*text-decoration:none !important;*/
+}
 </style>
