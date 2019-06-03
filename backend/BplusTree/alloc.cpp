@@ -1,4 +1,4 @@
-#include "./alloc.h"
+	#include "./alloc.h"
 #include "./exceptions.hpp"
 
 void file_alloc::del_node(node * p)
@@ -136,7 +136,7 @@ void file_alloc::free(off_t pos, size_t len)
 {
 	node * p = head, *q;
 	for (; p && p->start < pos; p = p->next);
-	
+
 	if (p) {
 		if (p->start < pos + len) {
 			//printf("invalid address: %d %d %d\n", p->start, pos, len);
