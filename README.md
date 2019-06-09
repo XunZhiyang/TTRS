@@ -4,7 +4,7 @@ TTRS Big Homework :steam_locomotive::train:
 
 
 
-<h3>一. 实现功能概览</h3>
+<h3>一. 额外功能概览</h3>
 <ul>
   <li>女团</li>
   <li>点歌</li>
@@ -14,6 +14,7 @@ TTRS Big Homework :steam_locomotive::train:
   <li>选座</li>
   <li>竞拍</li>
 </ul>
+
 
 <h3>二. 工作分配</h3>
 
